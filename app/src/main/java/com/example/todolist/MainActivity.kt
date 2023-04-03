@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity(), TaskItemClickListener
 
     private fun setRecyclerView()
     {
-        val mainActivity = this
+        val mainActivity= this
         taskViewModel.taskItems.observe(this){
             binding.todoListRecyclerView.apply {
                 layoutManager = LinearLayoutManager(applicationContext)
