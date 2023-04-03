@@ -46,5 +46,11 @@ class MainActivity : AppCompatActivity(), TaskItemClickListener
     {
         taskViewModel.setCompleted(taskItem)
     }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    override fun deleteTaskItem(taskItem: TaskItem){
+        taskViewModel.setDeleted(taskItem)
+    }
+
 }
 

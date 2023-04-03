@@ -45,6 +45,18 @@
             style="@style/TextAppearance.AppCompat.Title"
             android:layout_gravity="center"
             />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleY="1.5"
+            android:scaleX="1.5"
+            android:contentDescription="Delete"
+            android:id="@+id/delete"
+            android:layout_marginHorizontal="15dp"
+            android:src="@drawable/delete_24"
+            android:backgroundTint="@android:color/transparent"
+            />
 
     </LinearLayout>
 

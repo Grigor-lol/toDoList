@@ -26,6 +26,9 @@ class TaskItemViewHolder(
 
         binding.completeButton.setImageResource(taskItem.imageResource())
         binding.completeButton.setColorFilter(taskItem.imageColor(context))
+        binding.delete.setOnClickListener{
+            clickListener.deleteTaskItem(taskItem)
+        }
 
         binding.completeButton.setOnClickListener{
             clickListener.completeTaskItem(taskItem)
